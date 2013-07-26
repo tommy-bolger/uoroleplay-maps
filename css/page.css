@@ -1,0 +1,94 @@
+html, body, .map, #canvas, #content {
+    background: none repeat scroll 0 0 #FDF9D3;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+#canvas {
+    position: relative;
+    z-index: 100;
+}
+
+#tab_bar {
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+a.map_tab {
+    margin-right: 10px;
+    color: #002BB8;
+    background-color: #EEE3A4;
+    border: 0px solid #000000;
+    border-bottom: 0px solid #000000;
+    border-bottom-width: 0px;
+    padding: 2px 1em 2px 1em;
+    position: relative;
+    text-decoration: none;
+    top: 8px;
+}
+
+a.map_tab:hover, a.map_tab.active_tab, a.map_tab.active_tab:hover, a.map_tab.active_tab:visited {
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    z-index: 102;
+}
+
+#content {
+    height: 95%;
+    border-top: 1px solid #000000;
+    position: relative;
+    z-index: 101;
+}
+
+#left_pane {
+    width: 24%;
+    height: 100%;
+    border-right: 2px solid #000000;
+    float: left;
+    overflow: auto;
+}
+
+#right_pane {
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+
+.map_places {
+    padding: 10px;
+}
+
+.map_places .hovered {
+    background-color: #D8D8D8;
+}
+
+.map_places .clicked {
+    background-color: #D8D8D8;
+}
+
+.hidden {
+    display: none;
+}
+
+.baseLbl {
+    display: none;
+}
+
+.baseLayersDiv {
+    display: none;
+}
+
+.olTileImage {
+    height: auto !important;
+    width: auto !important;
+}
